@@ -60,3 +60,25 @@ const funChallenge = function (input) {
 funChallenge([1, 2, 3, 4, 5]);
 // -> 1 + 1 + 1 + (n + n + n + n)
 // 3 + 4n -> BIG O(3 + 4Nn)
+
+const anotherFunChallenge = function (input) {
+  let a = 5; // O(1)
+  let b = 10; // O(1)
+  let c = 50; // O(1)
+
+  for (let i = 0; i < input; i++) /* O(n) */ {
+    let x = i + 1; // O(n)
+    let y = i + 2; // O(n)
+    let z = i + 3; // O(n)
+  }
+
+  for (let j = 0; j < input; i++) /* O(n) */ {
+    let p = j * 2; // O(n)
+    let q = j * 2; // O(n)
+  }
+
+  let whoAmI = 'I dont know'; // O(1)
+};
+// 1 + 1 + 1 + 1 + (n + n + n + n + n + n + n)
+// -> BIG O (4 + 7n)
+anotherFunChallenge(5);
