@@ -92,3 +92,12 @@ anotherFunChallenge(5);
         Rule 4: Drop Non Dominants
 
 */
+
+// Remove the Constants
+const compressBoxesTwice = function (boxes) {
+  boxes.forEach(box => console.log(box)); // O(n)
+
+  boxes.forEach(box => console.log(box)); // O(n)
+};
+
+// -> O(2n) dropping the constant -> O(n)
