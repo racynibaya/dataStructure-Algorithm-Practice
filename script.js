@@ -59,7 +59,7 @@ const funChallenge = function (input) {
 
 funChallenge([1, 2, 3, 4, 5]);
 // -> 1 + 1 + 1 + (n + n + n + n)
-// 3 + 4n -> BIG O(3 + 4Nn)
+// 3 + 4n -> BIG O(3 + 4n)
 
 const anotherFunChallenge = function (input) {
   let a = 5; // O(1)
@@ -82,3 +82,13 @@ const anotherFunChallenge = function (input) {
 // 1 + 1 + 1 + 1 + (n + n + n + n + n + n + n)
 // -> BIG O (4 + 7n)
 anotherFunChallenge(5);
+
+/*
+    4 Rules of BIG O
+
+        Rule 1: Worst Case
+        Rule 2: Remove Constants
+        Rule 3: Different terms for inputs
+        Rule 4: Drop Non Dominants
+
+*/
