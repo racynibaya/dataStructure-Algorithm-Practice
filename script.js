@@ -41,3 +41,22 @@ const logFirstTwoBoxes = function (boxes) {
 };
 
 logFirstTwoBoxes(boxes); // O(2)
+
+// Challenge
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+const funChallenge = function (input) {
+  let a = 10; // O(1)
+  a = 50 + 3; // O(1)
+
+  for (let i = 0; i < input.length; i++) /* O(n) */ {
+    // another function(); // O(n)
+    let stranger = true; // O(n)
+    a++; // O(n)
+  }
+
+  return a; //O(1)
+};
+
+funChallenge([1, 2, 3, 4, 5]);
+// -> 1 + 1 + 1 + (n + n + n + n)
+// 3 + 4n -> BIG O(3 + 4Nn)
