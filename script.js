@@ -12,7 +12,7 @@ const nemo = [
   'darla',
   'hank',
 ];
-const large = new Array(100000).fill('nemo');
+const large = new Array(100).fill('nemo');
 function findNemo(array) {
   let t0 = performance.now();
   for (let i = 0; i < array.length; i++) {
@@ -72,7 +72,7 @@ const anotherFunChallenge = function (input) {
     let z = i + 3; // O(n)
   }
 
-  for (let j = 0; j < input; i++) /* O(n) */ {
+  for (let j = 0; j < input; j++) /* O(n) */ {
     let p = j * 2; // O(n)
     let q = j * 2; // O(n)
   }
@@ -101,3 +101,12 @@ const compressBoxesTwice = function (boxes) {
 };
 
 // -> O(2n) dropping the constant -> O(n)
+
+// Different terms for inputs
+const compressBoxesTwice2 = function (boxes, boxes2) {
+  boxes.forEach(box => console.log(box));
+
+  boxes2.forEach(box => console.log(box));
+};
+
+// -> O(a + b) -> because you're looping to two different input
